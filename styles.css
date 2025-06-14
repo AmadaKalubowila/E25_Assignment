@@ -1,0 +1,271 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Times New Roman", serif;
+}
+
+.icon-layout {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: #fff;
+  text-align: center;
+}
+.icon-layout .icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.icon-layout .icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+.icon-layout .icon-aws {
+  top: 53%;
+  left: 25%;
+}
+.icon-layout .icon-ms {
+  top: 33%;
+  left: 15%;
+}
+.icon-layout .icon-cisco {
+  top: 53%;
+  right: 5%;
+}
+.icon-layout .icon-bb {
+  top: 20%;
+  left: 25%;
+}
+.icon-layout .icon-search {
+  top: 53%;
+  right: 15%;
+}
+.icon-layout .icon-blue-circle {
+  top: 20%;
+  right: 15%;
+}
+.icon-layout .icon-circle {
+  top: 75%;
+  left: 15%;
+}
+.icon-layout .icon-link {
+  top: 33%;
+  right: 25%;
+}
+.icon-layout .icon-tv {
+  top: 53%;
+  left: 5%;
+}
+.icon-layout .icon-star {
+  top: 75%;
+  right: 5%;
+}
+.icon-layout .center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+}
+.icon-layout .center-content h1 {
+  font-size: 45px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.icon-layout .center-content p {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.icon-layout .center-content .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff2f75;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(255, 47, 117, 0.3);
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.icon-layout .center-content .button:hover {
+  background: #ff1664;
+}
+
+.hero-section-panel01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 30% 30%, rgba(128, 8, 120, 0.9098039216), transparent 50%), radial-gradient(circle at 75% 120%, blue, #ffffff, transparent 60%), linear-gradient(135deg, rgba(128, 8, 120, 0.9098039216), rgba(128, 8, 120, 0.9098039216));
+}
+.hero-section-panel01::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+.hero-section-panel01 .content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+.hero-section-panel01 .content h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+.hero-section-panel01 .content button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1333333333);
+  border: 1px solid rgba(255, 255, 255, 0.3333333333);
+  color: white;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hero-section-panel01 .content button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hero-section-panel02 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  background: radial-gradient(circle at 60% 90%, rgb(255, 255, 255), transparent 50%), radial-gradient(circle at 20% 15%, blue, #ffffff, transparent 60%), linear-gradient(135deg, #ffffff, #c3d3ec);
+}
+.hero-section-panel02::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+.hero-section-panel02 .content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+.hero-section-panel02 .content h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+.hero-section-panel02 .content p {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.custom-carousel {
+  position: relative;
+  width: 50%;
+  max-width: 800px;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+.custom-carousel .carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+}
+.custom-carousel .carousel-item {
+  flex: 0 0 100%;
+}
+.custom-carousel .carousel-item img {
+  margin-top: 5%;
+  width: 25%;
+  height: 97%;
+  display: block;
+  border-radius: 5%;
+  padding: 0 50px;
+}
+.custom-carousel .carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: rgba(29, 29, 29, 0.211);
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.custom-carousel .carousel-control.previous {
+  left: 10px;
+}
+.custom-carousel .carousel-control.next {
+  right: 10px;
+}
+
+.hero-section-panel03 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 8rem;
+  background: radial-gradient(circle at 55% 1%, rgb(170, 170, 171), blue, transparent 40%), radial-gradient(circle at 10% -80%, rgb(170, 170, 171), blue, transparent 50%), radial-gradient(circle at 81% -120%, rgb(170, 170, 171), blue, transparent 60%), linear-gradient(135deg, rgba(33, 28, 86, 0.9098039216), rgba(33, 28, 86, 0.9098039216));
+}
+.hero-section-panel03::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+.hero-section-panel03 .content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+.hero-section-panel03 .content h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+.hero-section-panel03 .content button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: #ff2f75;
+  border: 1px solid #ff2f75;
+  color: white;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 19%;
+}
+.hero-section-panel03 .content button:hover {
+  background: #ff2f75;
+}/*# sourceMappingURL=styles.css.map */
